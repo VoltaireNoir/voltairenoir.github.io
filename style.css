@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+:root {
+    --night1: #2e3440;
+    --night2: #3b4252;
+    --night3: #434c5e;
+    --night4: #4c566a;
+    --snow1: #d8dee9;
+    --snow2: #e5e9f0;
+    --snow3: #eceff4;
+    --frost1: #8fbcbb;
+    --frost2: #88c0d0;
+    --frost3: #81a1c1;
+    --frost4: #5e81ac;
+    --red: #bf616a;
+    --orange: #d08770;
+    --yellow: #ebcb8b;
+    --green: #a3be8c;
+    --magenta: #b48ead;
+}
+
+body {
+    font-size: 1.1em;
+    font-family: 'fira code', monospace;
+    background-color: var(--night1);
+    color: var(--snow1);
+    margin: 1.5em 1em;
+}
+
+.navbar {
+    display: inline-block;
+    color: var(--magenta);
+    margin: 0 auto;
+}
+
+.navlink {
+    display: inline-block;
+    color: var(--yellow);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.title, .body {
+    text-align: left;
+    margin-top: 2em;
+    color: var(--frost2);
+}
+
+.title-text, .body-text {
+    text-align: left;
+    color: var(--green);
+    margin: 0.5em 2em;
+}
