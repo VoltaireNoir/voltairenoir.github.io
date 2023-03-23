@@ -25,6 +25,7 @@ body {
     background-color: var(--night1);
     color: var(--snow1);
     margin: 1.5em 1em;
+    width: 100%;
 }
 
 .navbar {
