@@ -29,25 +29,53 @@ body {
 
 .navbar {
     display: inline-block;
-    color: var(--magenta);
+    color: var(--night4);
     margin: 0 auto;
+    font-weight: bold;
+}
+
+.navbar:hover {
+    color: var(--frost1);
 }
 
 .navlink {
     display: inline-block;
     color: var(--yellow);
-    font-weight: bold;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-.title, .body {
+.navlink:hover {
+    color: var(--snow1);
+}
+
+.block {
     text-align: left;
-    margin-top: 2em;
+    margin: 2em 1em;
+    color: var(--night4);
+    font-weight: bold;
+}
+
+.block:hover {
     color: var(--frost2);
 }
 
-.title-text, .body-text {
+.block-text {
     text-align: left;
-    color: var(--green);
+    color: var(--snow1);
     margin: 0.5em 2em;
+    font-weight: normal;
+}
+
+.block-text:hover {
+    color: var(--green);
+}
+
+.main {
+    color: var(--night4);
+    margin: 2em 0;
+}
+
+.main:hover {
+    color: var(--yellow);
 }
