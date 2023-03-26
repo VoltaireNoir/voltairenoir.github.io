@@ -51,7 +51,7 @@ body {
 
 .block {
     text-align: left;
-    margin: 2em 1em;
+    margin: 1em 0;
     color: var(--night4);
     font-weight: bold;
 }
