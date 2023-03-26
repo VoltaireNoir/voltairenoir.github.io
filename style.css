@@ -60,7 +60,7 @@ body {
     color: var(--frost2);
 }
 
-.block-text {
+.block-content {
     text-align: left;
     color: var(--snow1);
     margin: 0.5em 2em;
@@ -69,6 +69,10 @@ body {
 
 .block-text:hover {
     color: var(--green);
+}
+
+.block-header {
+    display: inline-block;
 }
 
 .main {
