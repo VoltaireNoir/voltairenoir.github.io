@@ -27,27 +27,6 @@ body {
     max-width: 45em;
 }
 
-.navbar {
-    display: inline-block;
-    color: var(--night4);
-    margin: 0 auto;
-    font-weight: bold;
-}
-
-.navbar:hover {
-    color: var(--frost1);
-}
-
-.navlink {
-    display: inline-block;
-    color: var(--yellow);
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.navlink:hover {
-    color: var(--snow1);
-}
 
 .block {
     text-align: left;
@@ -67,7 +46,15 @@ body {
     font-weight: normal;
 }
 
-.block-text:hover {
+.block-content[id="blog"], .block-content[id="projects"] {
+    display: none;
+}
+
+.block-content[class="inline"] {
+    display: inline-block;
+}
+
+.block-content:hover {
     color: var(--green);
 }
 
