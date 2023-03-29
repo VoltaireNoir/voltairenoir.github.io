@@ -61,6 +61,10 @@ body {
     color: var(--green);
 }
 
+.about .main-content {
+  display: block;
+}
+
 .main-content {
     display: none;
 }
