@@ -61,7 +61,7 @@ body {
     color: var(--green);
 }
 
-.blog .block-content, .projects .block-content {
+.main-content {
     display: none;
 }
 
