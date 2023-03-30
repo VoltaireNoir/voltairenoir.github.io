@@ -7,6 +7,15 @@ $(document).ready(function() {
       toggle(this);
     }
   });
+  $(this).keypress(event => {
+    if (event.key == 'j' || event.key === ' ') {
+      toggle_next_main();
+    } else if (event.key == 'k') {
+      toggle_prev_main()
+    } else if (event.key == "q") {
+      toggle_main(active_main().children(".main-header"));
+    }
+  });
 });
 
 function toggle(header) {
@@ -43,4 +52,26 @@ function toggle_main(header) {
 
   $header.siblings(".block-content").slideDown(200);
   $parent.removeClass("hidden");
+}
+
+function toggle_next_main() {
+  let header = active_main().next().children(".main-header");
+  if (header.length === 0) {
+    toggle_main($(".main").first().children(".main-header"));
+  } else {
+    toggle_main(header)
+  }
+}
+
+function toggle_prev_main() {
+  let header = active_main().prev().children(".main-header");
+  if (header.length === 0) {
+    toggle_main($(".main").last().children(".main-header"));
+  } else {
+    toggle_main(header)
+  }
+}
+
+function active_main() {
+  return $('.main').not('.hidden').first();
 }
