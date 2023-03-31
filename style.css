@@ -65,8 +65,8 @@ body {
   display: block;
 }
 
-.main-content {
-    display: none;
+.hidden .block-content {
+  display: none;
 }
 
 .block-content[class="inline"] {
